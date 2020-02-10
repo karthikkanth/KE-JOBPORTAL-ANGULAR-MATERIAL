@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-md-12">
+    <form [formGroup]="JSPersonalDetailsForm">
+  <div class="col-md-12">
+    <mat-form-field>
+      <input matInput placeholder="Your Home Town" formControlName= "YourHomeTown">
+    </mat-form-field>
+    <div *ngIf="submitted && f.YourHomeTown.errors" class="invalidStatus">
+      <div *ngIf="f.YourHomeTown.errors.required">Your Home Town is required</div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <mat-form-field>
+      <input matInput placeholder="Areas of Interest (Mechanical, Electrical, etc)" formControlName="AreasofInterest">
+    </mat-form-field>
+    <div *ngIf="submitted && f.AreasofInterest.errors" class="invalidStatus">
+      <div *ngIf="f.AreasofInterest.errors.required">Your Areas of Interest is required</div>
+    </div>
+  </div> 
+  <div class="col-md-12">
+    <mat-form-field >
+      <input matInput placeholder="Years of Experience" formControlName="YearsOfExperience">
+    </mat-form-field>
+    <div *ngIf="submitted && f.YearsOfExperience.errors" class="invalidStatus">
+      <div *ngIf="f.YearsOfExperience.errors.required">Your Years of Experience is required</div>
+    </div>
+  </div>
+  
+  <div class="col-md-12">
+    <mat-form-field >
+      <input matInput placeholder="Marital Status (Married /UnMarried)" formControlName="MaritalStatus">
+    </mat-form-field>
+    <div *ngIf="submitted && f.MaritalStatus.errors" class="invalidStatus">
+      <div *ngIf="f.MaritalStatus.errors.required">Your MaritalStatus is required</div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <mat-form-field >
+      <input matInput placeholder="Nationality" formControlName="Nationality"> 
+    </mat-form-field>
+    <div *ngIf="submitted && f.Nationality.errors" class="invalidStatus">
+      <div *ngIf="f.Nationality.errors.required">Your Nationality is required</div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <mat-form-field >
+      <input matInput placeholder="Languages Known (Telugu /English/Hindi)" formControlName="LanguagesKnown">
+    </mat-form-field>
+    <div *ngIf="submitted && f.LanguagesKnown.errors" class="invalidStatus">
+      <div *ngIf="f.LanguagesKnown.errors.required">Your Languages Known is required</div>
+    </div>
+  </div>
+  <div class="text-align col-md-12">
+      <i class="material-icons navigateNextIcon" (click)="onSubmitJSPersonalDetailsForm()">navigate_next</i> 
+  </div>
+    </form>
+  </div>
+</div>

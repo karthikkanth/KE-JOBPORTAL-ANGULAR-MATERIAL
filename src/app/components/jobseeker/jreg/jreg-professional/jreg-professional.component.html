@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-md-12">
+    <form [formGroup]="JSProfessionalForm">
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Your Current /Last job location" formControlName="currentJobLocation">
+        </mat-form-field>
+        <!-- <div *ngIf="submitted && f.currentJobLocation.errors" class="invalidStatus">
+          <div *ngIf="f.currentJobLocation.errors.required">Your Home Town is required</div>
+        </div> -->
+      </div>
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Years of experience in last /current job"
+            formControlName="yearsOfExperienceInCurrentJob">
+        </mat-form-field>
+        <!-- <div *ngIf="submitted && f.yearsOfExperienceInCurrentJob.errors" class="invalidStatus">
+          <div *ngIf="f.yearsOfExperienceInCurrentJob.errors.required">Your Home Town is required</div>
+        </div> -->
+      </div>
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Job Role" formControlName="JobRole">
+        </mat-form-field>
+        <!-- <div *ngIf="submitted && f.JobRole.errors" class="invalidStatus">
+          <div *ngIf="f.JobRole.errors.required">Your Home Town is required</div>
+        </div> -->
+      </div>
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Domain" formControlName="Domain">
+        </mat-form-field>
+        <!-- <div *ngIf="submitted && f.Domain.errors" class="invalidStatus">
+          <div *ngIf="f.Domain.errors.required">Your Home Town is required</div>
+        </div> -->
+      </div>
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Present /Previous Salary" formControlName="PresentSalary">
+        </mat-form-field>
+        <!-- <div *ngIf="submitted && f.PresentSalary.errors" class="invalidStatus">
+          <div *ngIf="f.PresentSalary.errors.required">Your Home Town is required</div>
+        </div> -->
+      </div>
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Reason for  Leaving current /last job"
+            formControlName="reasonsForLeavingCurrentJob">
+        </mat-form-field>
+        <!-- <div *ngIf="submitted && f.reasonsForLeavingCurrentJob.errors" class="invalidStatus">
+          <div *ngIf="f.reasonsForLeavingCurrentJob.errors.required">Your Home Town is required</div>
+        </div> -->
+      </div>
+      <div class="text-align col-md-12 submitbtn">
+        <!-- <i class="material-icons navigateNextIcon" >navigate_next</i>  -->
+        <button type="submit" mat-raised-button (click)="onSubmitJSProfessionalDetails()">Register</button>
+      </div>
+    </form>
+  </div>
+</div>

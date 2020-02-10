@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-md-12">
+    <form [formGroup]="AddJobform">
+      <div class="col-md-12 ">
+        <mat-form-field>
+          <input matInput placeholder="Company Name*" formControlName="companyname">
+        </mat-form-field>
+        <div *ngIf="submitted && f.companyname.errors" class="invalidStatus">
+          <div *ngIf="f.companyname.errors.required">Company Name is required</div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Position*" formControlName="position">
+        </mat-form-field>
+         <div *ngIf="submitted && f.position.errors" class="invalidStatus">
+          <div *ngIf="f.position.errors.required">Position is required</div>
+        </div>  
+      </div>
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Experience*" formControlName="experience">
+        </mat-form-field>
+        <div *ngIf="submitted && f.experience.errors" class="invalidStatus">
+          <div *ngIf="f.experience.errors.required">Experience is required</div>
+        </div> 
+      </div>
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Technologies" formControlName="technologies">
+        </mat-form-field>
+         <div *ngIf="submitted && f.technologies.errors" class="invalidStatus">
+          <div *ngIf="f.technologies.errors.required">Technologies is required</div>
+        </div> 
+      </div>
+      <div class="col-md-12">
+        <mat-form-field>
+          <input matInput placeholder="Location" formControlName="location">
+        </mat-form-field>
+         <div *ngIf="submitted && f.location.errors" class="invalidStatus">
+          <div *ngIf="f.location.errors.required">Location is required</div>
+        </div> 
+      </div>
+      <div class="text-align col-md-12 submitbtn">
+        <!-- <i class="material-icons navigateNextIcon" >navigate_next</i>  -->
+        <button type="submit" mat-raised-button (click)="Save()">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

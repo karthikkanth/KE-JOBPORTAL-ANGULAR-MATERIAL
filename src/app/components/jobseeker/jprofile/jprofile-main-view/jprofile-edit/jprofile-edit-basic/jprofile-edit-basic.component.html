@@ -1,0 +1,61 @@
+<div class="row" class="mt30">
+  <div class="col-md-12">
+  <form [formGroup]="JSBasicDetailsForm">
+        <div class="col-md-12 ">
+          <mat-form-field>
+            <input matInput placeholder="User Name*" formControlName="username" readonly>
+          </mat-form-field>
+          <!-- <div *ngIf="submitted && f.username.errors" class="invalidStatus">
+            <div *ngIf="f.username.errors.required">Username is required</div>
+          </div> -->
+        </div> 
+        <div class="col-md-12">
+          <mat-form-field >
+            <input matInput placeholder="Email*" formControlName="email" readonly>
+          </mat-form-field>
+          <!-- <div *ngIf="submitted && f.email.errors" class="invalidStatus">
+            <div *ngIf="f.email.errors.required">Email is required</div>
+            <div *ngIf="f.email.errors.pattern">Invalid Email</div>
+          </div> -->
+        </div>
+        <!-- <div class="col-md-12">
+          <mat-form-field >
+            <input matInput placeholder="Password*" formControlName="password">
+          </mat-form-field>
+          <div *ngIf="submitted && f.password.errors" class="invalidStatus">
+            <div *ngIf="f.password.errors.required">Email is required</div>
+            <div *ngIf="f.password.errors.minlength">Min 6 characters.</div>
+          </div>
+        </div> -->
+        
+        <div class="col-md-12">
+          <mat-form-field >
+            <input matInput placeholder="mobile" formControlName="mobile">
+          </mat-form-field>
+          <div *ngIf="submitted && f.mobile.errors" class="invalidStatus">
+            <div *ngIf="f.mobile.errors.required">Mobile no is required</div>
+            <div *ngIf="f.mobile.errors.minlength">10 characters required.</div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <mat-form-field >
+            <input matInput placeholder="Address1" formControlName="address1">
+          </mat-form-field>
+          <div *ngIf="submitted && f.address1.errors" class="invalidStatus">
+            <div *ngIf="f.address1.errors.required">Address is required</div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <mat-form-field >
+            <input matInput placeholder="Address2" formControlName="address2">
+          </mat-form-field>
+        </div>
+        <!-- <div class="col-md-12">
+            <a><mat-checkbox class="termsAndConditions" formControlName="isTosRead">I agree to the terms and conditions</mat-checkbox></a>
+        </div> -->
+        <div class="text-align">
+            <i class="material-icons navigateNextIcon" (click)="onSubmitJSBasicDetailsForm()" >navigate_next</i> 
+        </div>
+  </form>
+</div>
+</div>

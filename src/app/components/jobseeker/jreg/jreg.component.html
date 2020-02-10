@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="col-5" style="max-width: 675px; margin-bottom: auto; margin-top: auto;">
+      <mat-card class="registrationCard">
+        <h4 style="text-align: center; font-weight: bold;"> JOB SEEKER REGISTRATION </h4>
+        <nav mat-tab-nav-bar>
+          <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.link" routerLinkActive
+            #rla="routerLinkActive" [active]="rla.isActive">{{link.label}}
+          </a>
+        </nav>
+        <router-outlet></router-outlet>
+      </mat-card>
+    </div>
+  </div>
+</div>
